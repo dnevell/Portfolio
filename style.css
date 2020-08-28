@@ -1,0 +1,110 @@
+/* gradient  */
+
+body { 
+background: linear-gradient(to top, #001aff,  #0e9ab3,  #4ad5ee); 
+}
+
+
+header {
+  width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  text-align:center;
+}
+
+nav {
+  color:beige;
+}
+
+div {
+  width: 600px;
+  margin: 0 auto;
+  
+  padding: 20px;
+}
+
+h2, h3 {
+  text-align:center;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h2 {
+  
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  padding: 40px;
+ 
+}
+
+h4 {
+
+}
+
+p {
+  font-size: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  text-align:justified;
+  
+}
+
+hr {
+  width: 600px;
+}
+
+a{
+
+}
+
+a:link    { color: #fff;  }
+a:visited { color: #fff;   }
+a:hover   { color: #000; }
+a:active  { color: rgb(255, 0, 43);  }
+
+li {
+  
+  text-align:left;
+  padding: ;
+}
+
+ol, ul {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFF
+}
+
+.white {
+  color: #FFF
+}
+
+footer {
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 200;
+  font-size: 120px;
+  color: #000;
+}
+
+span {
+  font-weight:900;
+  color: white
+}
+
