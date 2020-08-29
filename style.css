@@ -1,5 +1,7 @@
 /* gradient  */
 
+
+
 body { 
 background: linear-gradient(to top, #001aff,  #0e9ab3,  #4ad5ee); 
 }
@@ -10,6 +12,10 @@ header {
   margin: 0 auto;
   padding: 30px;
   text-align:center;
+}
+
+.black {
+  color:#000;
 }
 
 nav {
@@ -41,7 +47,9 @@ h3 {
 }
 
 h4 {
-
+ font-size: 30px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
 }
 
 p {
@@ -57,13 +65,12 @@ hr {
 }
 
 a{
-
 }
 
-a:link    { color: #fff;  }
-a:visited { color: #fff;   }
-a:hover   { color: #000; }
-a:active  { color: rgb(255, 0, 43);  }
+a:link    { color: #fff;  text-decoration: none;  }
+a:visited { color: #fff;   text-decoration: none;  }
+a:hover   { color: rgb(0, 0, 0);  text-decoration: none; }
+a:active  { color: #32BDD6; text-decoration: none; }
 
 li {
   
@@ -79,7 +86,7 @@ ol, ul {
 }
 
 .white {
-  color: #FFF
+  color: #FFF;
 }
 
 footer {
@@ -106,5 +113,16 @@ h1 {
 span {
   font-weight:900;
   color: white
+}
+
+.rotate {
+  transition: all 2s ease-in-out;
+  
+}
+
+.rotate:hover {
+  transform: rotate(1800deg);
+  
+  
 }
 
