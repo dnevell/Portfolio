@@ -8,7 +8,7 @@ background: linear-gradient(to top, #001aff,  #0e9ab3,  #4ad5ee);
 
 
 header {
-  width: 600px;
+  
   margin: 0 auto;
   padding: 30px;
   text-align:center;
@@ -23,26 +23,28 @@ nav {
 }
 
 div {
-  width: 600px;
+  
   margin: 0 auto;
   
-  padding: 20px;
+  padding: 10px;
 }
 
 h2, h3 {
-  text-align:center;
+  
   font-family: 'Titillium Web', sans-serif;
 }
 
 h2 {
-  
+  text-align:justified;
   font-size: 40px;
+  line-height: 100%;
 }
 
 h3 {
+  text-align:left;
   font-size: 30px;
   color: rgb(255, 255, 255);
-  padding: 40px;
+  
  
 }
 
@@ -56,12 +58,22 @@ p {
   font-size: 30px;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 700;
-  text-align:justified;
+  text-align:left;
+  line-height: 41px;
   
 }
 
+.chonky {
+  font-size: 55px;
+  font-weight: 900;
+  text-align: left;
+}
+
+/* TO DO: animate hr to swipe in to the right as user scrolls through */
 hr {
-  width: 600px;
+
+margin-left: 10px;
+margin-right: 10px;
 }
 
 a{
@@ -70,7 +82,7 @@ a{
 a:link    { color: #fff;  text-decoration: none;  }
 a:visited { color: #fff;   text-decoration: none;  }
 a:hover   { color: rgb(0, 0, 0);  text-decoration: none; }
-a:active  { color: #32BDD6; text-decoration: none; }
+a:active  { color: rgb(0, 0, 0); text-decoration: none; }
 
 li {
   
@@ -116,15 +128,79 @@ span {
 }
 
 .rotate {
-  transition: all 3s ease-in-out;
+  
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0,1,0.5,1);
   border-radius: 100%;
   max-width:400px;
 }
 
 .rotate:hover {
-  transform: rotate(1333deg) ;
+  transform: rotate(2354deg) ;
 
 }
 
 
- 
+
+/* mobile 1st */
+.wrapper {
+  width: 100%;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Desktop */
+
+@media all and (min-width: 800px) {
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  hr {
+
+margin-left: 100px;
+margin-right: 100px;
+}
+.images {
+  max-width:720px;
+  width: 450px;
+  height: auto;
+}
+} 
+
+.section-title {
+  text-align: right;
+  margin: 100px
+}
+
+
+.images {
+  width: 326px;
+  
+  height: 444px
+}
+
+
