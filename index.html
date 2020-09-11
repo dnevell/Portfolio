@@ -13,29 +13,24 @@
   <body>
     <header>
       <div class = "wrapper">
-<!-- name logo on top instead of h1 -->
+        <div class = "topnav">
+         <img class = "rotate" src="images/namelogos/invertnobg4.png" alt="circular-name-logo" style=
+        "width:10%;
+       max-width:30%;
+       display: inline;
+       margin-left: auto;
+       margin-right: auto;"> 
+        </div>
+      
 
-      <img class = "rotate" src="images/namelogos/invertnobg4.png" alt="circular-name-logo" style=
-      "width:50%;
-      max-width:400px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;"> 
-
-<!--  <img class="rotate" src="images/blk-on-wht.png" alt="circular-name-logo" style="width:50%;max-width:400px;display: block;
-  margin-left: auto;
-  margin-right: auto;">-->
-       
-
-  <!-- right now I am linking out to my design portfolio and github, but in the future i want to have a separate section for design, and i probably wont need a nav with my github because I'm already linking to it in the contact section -->
-          <nav>
-            <h2 class = "white">
-            <a href = "https://dylannevell.com/">DESIGN,</a>
-            <a href = "https://github.com/dnevell">PROGRAMMING,</a>
-            & MORE
-            </h2>
-          </nav>
-      </div>
+          
+        <div class = "topnav-right"  
+            <a href = "https://dylannevell.com/"><p>ABOUT</p></a>
+            <a href = "https://github.com/dnevell"><p>WORK</p></a>
+        </div>
+           
+         
+      </div>  
     </header>
 
 <hr>
@@ -45,14 +40,14 @@
       
       <div class = "group">
         <div class = "item-double" >
-          <img src = "images/chill-cat.jpg" alt = "robot face circle logo" style= "width:80%;max-width:400px;display: block;
+          <img src = "images/chill-cat.jpg" alt = "robot face circle logo" style= "width:80%; display: block;
   margin-left: auto;
   margin-right: auto;">
         </div>
       
         <div class = "item" >
           
-          <h2 class = "white chonky">Hey I'm Dylan.</h2>
+          <h2 class = "white">Hey I'm Dylan.</h2>
           <p>I am a Graphic Designer and Web Developer from Newport Beach, CA.</p>
         </div>
       </div>
@@ -89,7 +84,7 @@
       <h2>WORK</h2>
       </div>
     <div class = "group">
-      
+      <div class = "container">
       <div class = "item double">
         
         <!-- embedded IG video 
@@ -102,6 +97,8 @@
         <p>Created with Adobe Illustrator & After Effects</p>
         
       </div>
+      </div>
+      <div class = "container">
         <div class = "item">
         
         <img src = "images/apps/applewatch.jpg" alt = "apple watch" class= "images">
@@ -109,6 +106,8 @@
           <p style = "font-size: 22px; line-height: 28px">Users can convert videos and Gifs into animated wallpapers and themes for Apple Watch or choose from a library of thousands of HD wallpapers.</p>
           <p>Built with React.js & Python</p>
       </div>
+      </div>
+      <div class = "container">
       <div class = "item">
         
         
@@ -120,6 +119,7 @@
         
           <p style = "font-size: 22px; line-height: 28px">Users can connect their school's homework app (Canvas, Moodle, Blackboard, GoogleStudent) with their Calendar app or Google Calendar.  </p>
           <p>Built with React.js & Python</p>
+          </div>
           </div>
           </div>
       </div>
@@ -150,6 +150,17 @@
          
       </div>
     </div>
+  </div>
+
+  <div>
+    <form class="contact-form">
+      <label for="name">Your Name:</label>
+      <input id="nanme" type = "text">
+      <label for="email">Your Email:</label>
+      <input id="email" type = "text">
+      <label for="form-message">Your message:</label>
+      <textarea id="form-message" name="message"></textarea>
+    </form>
   </div>
 
   </footer>
