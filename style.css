@@ -3,30 +3,27 @@
 
 
 body { 
-background: linear-gradient(to top, #001aff,  #0e9ab3,  #4ad5ee); 
+background: linear-gradient(180deg, rgb(77, 178, 245) 0%, rgb(192, 164, 70) 21%, rgb(255, 160, 235) 50%, rgb(255, 129, 141) 75%, rgb(235, 150, 81) 100%);
 }
 
 
 header {
-  
-  margin: 0 auto;
-  padding: 30px;
-  text-align:center;
+height: 10%;
 }
 
 .black {
-  color:#000;
+  color:rgb(0, 0, 0);
 }
 
 nav {
-  color:beige;
+ 
 }
 
 div {
   
   margin: 0 auto;
   
-  padding: 10px;
+  padding: 4%;
 }
 
 h2, h3 {
@@ -55,11 +52,12 @@ h4 {
 }
 
 p {
-  font-size: 30px;
+  font-size: 22px;
   font-family: 'Titillium Web', sans-serif;
-  font-weight: 700;
+  
   text-align:left;
-  line-height: 41px;
+  line-height: 26px;
+  color: #ffffff
   
 }
 
@@ -72,8 +70,8 @@ p {
 /* TO DO: animate hr to swipe in to the right as user scrolls through */
 hr {
 
-margin-left: 10px;
-margin-right: 10px;
+margin-left: 3%;
+margin-right: 3%;
 }
 
 a{
@@ -102,7 +100,7 @@ ol, ul {
 }
 
 footer {
-  margin-bottom: 100px;
+  margin-bottom: 10%;
 }
 
 
@@ -137,6 +135,7 @@ span {
 
 .rotate:hover {
   transform: rotate(2354deg) ;
+  cursor: wait;
 
 }
 
@@ -145,32 +144,49 @@ span {
 /* mobile 1st */
 .wrapper {
   width: 100%;
+  top-margin: 2%;
+  margin: 3%;
 }
 
 .group {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: left;
+  align-items: center;
 }
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin: 3%;
 }
 
 .item-double {
   flex: 2;
-  margin: 10px;
+  margin: 3%;
 }
 
 /* Desktop */
 
 @media all and (min-width: 800px) {
+
+  p {
+  text-align:left;
+
+  }
+
+  .item {
+  flex: 1;
+  margin: 4%;
+}
+
+.item-double {
+  flex: 2;
+  margin: 4%;
+}
   .wrapper {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 4%;
   }
 
   .group {
@@ -181,11 +197,11 @@ span {
 
   hr {
 
-margin-left: 100px;
-margin-right: 100px;
+margin-left: 4%;
+margin-right: 4%;
 }
 .images {
-  max-width:720px;
+  max-width:92%;
   width: 450px;
   height: auto;
 }
@@ -203,4 +219,37 @@ margin-right: 100px;
   height: 444px
 }
 
+.container {
+ 
+}
 
+.contact-form {
+  background-color:#ffffff;
+  width: 50%;
+  padding: 5%;
+  text-align: justify;
+  opacity:90%;
+}
+
+form label {
+display: block;
+color:rgb(0, 0, 0);
+font-family: 'Titillium Web';
+
+}
+
+form label[type=text]#form-message {
+
+}
+
+.topnav{
+justify-content: flex-start;
+}
+
+.topnav-center{
+margin: auto;
+}
+
+.topnav-right{
+align-items: flex-end;
+}
